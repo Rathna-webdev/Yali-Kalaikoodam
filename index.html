@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yali Kalaikoodam</title>
+     <link rel="icon" type="image/x-icon" href="/assets/images/">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <button class="hamburger" id="hamburgerBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-list" id="navList">
+            <li><a href="#introduction" class="nav-link">About Us</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#updates" class="nav-link">Updates</a></li>
+            <li><a href="#contact" class="nav-link">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        
+        <div class="hero-content">
+            <div class="hero-images-wrapper">
+                <img src="assets/images/image-1-hero.png" alt="Yali Image 1" class="hero-image-1" />
+                <img src="assets/images/image-2-hero.png" alt="Yali Image 2" class="hero-image-2" />
+            </div>
+            <div class="yali-logo">
+                <img src="assets/images/yali-logo.svg" alt="Yali Logo" />
+            </div>
+            <button class="register-form-btn" onclick="openRegisterModal()">REGISTER FORM</button>
+            <div class="hero-social">
+                <p class="connect-text">Let's Connect With</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/yali_kalaikoodam/" target="_blank" class="social-link instagram" title="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <circle cx="17.5" cy="6.5" r="1.5"></circle>
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/yalikalaikkoodam/" target="_blank" class="social-link facebook" title="Facebook">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 2h-3a6 6 0 0 0-6 6v3H7v4h2v8h4v-8h3l1-4h-4V8a2 2 0 0 1 2-2h1z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/@yalikalaikoodam" target="_blank" class="social-link youtube" title="YouTube">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTRODUCTION SECTION -->
+    <section class="introduction" id="introduction">
+        <div class="intro-bg"></div>
+        <div class="intro-wrapper">
+            <div class="intro-content">
+                <h2 class="section-title">INTRODUCTION</h2>
+                <p class="intro-text">
+                    The Parai is more than a drum; it is a voice. Together, let's transform your interest into a rhythm that speaks. Lorem ipsum dolor sit amet consectetur. Ut viverra turpis semper cras eu tempor integer. Rhoncus non facilisis mauris consequat nunc nunc pharetra. Morbi maecenas pharetra nibh facilisi justo ut fusce nunc.
+                </p>
+            </div>
+            <div class="video-placeholder">
+                <i class="fas fa-play"></i>
+                <span>Video Intro</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services" id="services">
+        <div class="services-content">
+            <h2 class="section-title">OUR SERVICES</h2>
+            <div class="services-list">
+                <div class="service-item">
+                    <span>Paraiyattam</span>
+                </div>
+                <div class="service-item">
+                    <span>Foundational Courses</span>
+                </div>
+                <div class="service-item">
+                    <span>Advanced Rhythms</span>
+                </div>
+                <div class="service-item">
+                    <span>Instructor Training</span>
+                </div>
+                <div class="service-item">
+                    <span>Theory & History Session</span>
+                </div>
+                <div class="service-item">
+                    <span>Heritage Performances</span>
+                </div>
+                <div class="service-item">
+                    <span>Physical Fitness Movements</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOK DEMO SECTION -->
+    <section class="book-demo" id="book-demo">
+        <div class="demo-bg"></div>
+        <div class="demo-content">
+            <h2 class="demo-title">Book your session<br>With us.</h2>
+            <p class="demo-subtitle">
+                Lorem ipsum dolor sit amet consectetur. Pulvinar sed sit adipiscing eu. Magna aliquam amet turpis faucibus.
+            </p>
+            <button class="book-spot-btn" onclick="openRegisterModal()">BOOK YOUR SPOT</button>
+        </div>
+    </section>
+
+    <!-- LATEST UPDATES SECTION -->
+    <section class="latest-updates" id="updates">
+        <div class="updates-content">
+            <h2 class="section-title">LATEST UPDATES</h2>
+            <div class="updates-grid">
+                <div class="update-card">
+                    <div class="update-image"></div>
+                    <div class="update-info">
+                        <h3>Workshop Series</h3>
+                        <p>Join our weekly workshops</p>
+                        <a href="#">Learn More →</a>
+                    </div>
+                </div>
+                <div class="update-card">
+                    <div class="update-image"></div>
+                    <div class="update-info">
+                        <h3>Summer Camp 2024</h3>
+                        <p>Intensive training programs</p>
+                        <a href="#">Register Now →</a>
+                    </div>
+                </div>
+                <div class="update-card">
+                    <div class="update-image"></div>
+                    <div class="update-info">
+                        <h3>Performance Event</h3>
+                        <p>Heritage celebration</p>
+                        <a href="#">Get Tickets →</a>
+                    </div>
+                </div>
+                <div class="update-card">
+                    <div class="update-image"></div>
+                    <div class="update-info">
+                        <h3>Online Classes</h3>
+                        <p>Learn from anywhere</p>
+                        <a href="#">Join Class →</a>
+                    </div>
+                </div>
+            </div>
+            <button class="show-more-btn">Show more</button>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+        <div class="contact-bg"></div>
+        <div class="contact-content">
+            <h2 class="contact-title">Contact us</h2>
+            <p class="contact-subtitle">
+                The Parai is more than a drum; it is a voice. Together, let's transform your interest into a rhythm that speaks.
+            </p>
+            
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Full Name" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required /> 
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Phone Number" required />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" required />
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="send-btn">Send Message</button>
+                </form>
+            
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <div class="brand-header">
+            <img src="assets/images/Yali footer.png" alt="" class="footer-image">
+        </div>
+
+        <div class="footer-content">
+            
+            <div class="social-links">
+                <a href="https://www.instagram.com/yali_kalaikoodam/" class="social-btn">
+                    <span>Instagram</span>
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/yalikalaikkoodam/" class="social-btn">
+                    <span>Facebook</span>
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.youtube.com/@yalikalaikoodam" class="social-btn">
+                    <span>Youtube</span>
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+
+            <div class="map-container">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9542506130915!2d80.1607310750765!3d12.974777987340875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525f000594f921%3A0xafe1c86a02ba8505!2sYali%20Kalaikoodam!5e0!3m2!1sen!2sin!4v1769275464500!5m2!1sen!2sin"  
+               allowfullscreen="" 
+               loading="lazy" ></iframe>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span class="copyright-icon">C</span>
+            <p>2026 Yali Kalaikoodam. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- REGISTER MODAL -->
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeRegisterModal()">&times;</span>
+            <h2>Register with Yali Kalaikoodam</h2>
+            <form id="registerForm" onsubmit="handleRegister(event)">
+                <div class="form-group">
+                    <label for="regName">Full Name</label>
+                    <input type="text" id="regName" required />
+                </div>
+                <div class="form-group">
+                    <label for="regEmail">Email</label>
+                    <input type="email" id="regEmail" required />
+                </div>
+                <div class="form-group">
+                    <label for="regPhone">Phone Number</label>
+                    <input type="tel" id="regPhone" required />
+                </div>
+                <div class="form-group">
+                    <label for="regCourse">Course Interest</label>
+                    <select id="regCourse" required>
+                        <option value="">Select a course</option>
+                        <option value="paraiyattam">Paraiyattam</option>
+                        <option value="foundational">Foundational Courses</option>
+                        <option value="advanced">Advanced Rhythms</option>
+                        <option value="instructor">Instructor Training</option>
+                        <option value="theory">Theory & History Session</option>
+                        <option value="heritage">Heritage Performances</option>
+                        <option value="fitness">Physical Fitness Movements</option>
+                    </select>
+                </div>
+                 <div class="form-group">
+                        <label for="regSubject">Subject</label>
+                        <textarea placeholder="Message" rows="5" required></textarea>
+                    </div>
+                <button type="submit" class="submit-btn">Submit Registration</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
