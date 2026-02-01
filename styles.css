@@ -1369,6 +1369,14 @@ body {
         gap: 48px;
     }
 
+     
+    .footer-content {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 64px;
+    }
+
     .footer-content {
         justify-content: space-around;
     }
